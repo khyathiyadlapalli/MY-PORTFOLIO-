@@ -1,0 +1,250 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title> Personal portfolio website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/f18b6457b7.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class ="container">
+                <nav>
+                    <img src="images/logo.png" class="logo">
+                    <ul id ="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()" ></i>
+                </nav>
+                <div class="header-text">
+                    <p>FRESHER</p>
+                    <h1> Hi,I'm <span>Khyathi </span><br> from India</h1>
+                </div>
+            </div>
+
+        </div>
+       <!-- -------------about----------- -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/user-1.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I am currently in my fourth year pursuing a B.Tech degree in Information Technology at JNTU-GV Vizianagaram. Additionally, I am simultaneously pursuing a B.Tech minors degree in the Electronics and Communication Engineering (ECE) department. My academic journey has been complemented by active involvement in diverse projects, primarily focusing on machine learning. I have also ventured into web development, contributing to a well-rounded practical experience in these domains.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Machine learning</span><br>Make predictions, and continuously improve performance based on experience</li>
+                                <li><span>Python</span><br>Programming language</li>
+                                <li><span>Seaborn</span><br>Used for visualizing complex datasets with multiple variables</li>
+                                <li><span>SQL</span><br>Managing and manipulating relational databases.</li>
+                                <li><span>Java script</span><br>Web development</li>
+                                <li><span>HTML &CSS</span><br>Building websites</li>
+                                <li><span>Pandas&Numpy</span><br>Python libraries</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Research- focused Internship</span><br>NIT AP-(05/2023-07/2023)</li>
+                                <li><span>Artificial Intelligence Virtual Experience Program</span><br>Forage(Cognizant)-(07/2023)</li>
+                                <li><span>Sales Force Developer Virtual Internship</span><br>Smart Internz-(08/2022-10/2022)</li>
+                                <li><span>Web designing and Developer Intern</span><br>Sparks Foundation-(07/2022)</li>
+                                
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>B.Tech in Information Technology  </span><br>Jawaharlal Nehru Technological University Guragada (2020-2024)</li>
+                                <li><span>XII-Intermediate</span><br>Sasi Junior college for womens (2018-2020)</li>
+                                <li><span>High School</span><br>Sasi EM High School (2018)</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---- -----------services------------ --->
+             <div id="services">
+                <div class="container">
+                    <h1 class="sub-title">MY Services</h1>
+                    <div class="services-list">
+                        <div>
+                            <i class="fa-solid fa-laptop"></i>
+                            <h2>Machine learning Engineering</h2>
+                            <p>Developing and deploying machine learning models, designing algorithms, and creating systems that can learn from and make predictions on data </p>
+                            
+                            <a href="#">Learn more</a>
+
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-chart-line"></i>
+                            <h2>Data scientist</h2>
+                            <p>Analysing complex datasets to extract meaningful insights, identify patterns, and make informed decisions that drive business outcomes.</p>
+                            <a href="#">Learn more</a>
+
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-code"></i>
+                            <h2>Web development</h2>
+                            <p>Design and create websites.</p>
+                            <a href="#">Learn more</a>
+
+                        </div>
+                        
+
+
+
+                    </div>
+
+                </div>
+             </div>
+<!-------------Portfolio------------------------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/Brain tumour.jpeg">
+                <div class="layer">
+                    <h3>Brain-Tumor Segmentation</h3>
+                    <p>Brain tumor segmentation is the process of identifying and delineating regions of interest corresponding to tumors within brain imaging data, often achieved through advanced techniques in medical image processing and deep learning models. </p>
+                    <a href="https://github.com/khyathiyadlapalli/Brain-tumor-Segmentation"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div> <!-- This </div> was missing -->
+
+            <div class="work">
+                <img src="images/loan approval.jpeg">
+                <div class="layer">
+                    <h3>Loan approval predictions</h3>
+                    <p>Loan approval prediction involves using machine learning models to forecast the likelihood of a loan applicant being approved or rejected based on various factors and historical data.</p>
+                    <a href="https://github.com/khyathiyadlapalli/Loan-prediction"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Movierecommendation.jpeg">
+                <div class="layer">
+                    <h3>Movie Recommendation systems</h3>
+                    <p>Recommendation systems, and interactive widgets to provide a user-friendly movie search </p>
+                    <a href="https://github.com/khyathiyadlapalli/Movie-Recommendation-System"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Youtubeapi.jpeg">
+                <div class="layer">
+                    <h3>YouTube Analysis using Google API</h3>
+                    <p>By leveraging Google API, we extract data from YouTube and conduct analysis on the retrieved information.</p>
+                    <a href="https://github.com/khyathiyadlapalli/Youtube-Data-Analysis-"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/amazonclone.jpeg">
+                <div class="layer">
+                    <h3>Amazon Clone</h3>
+                    <p>Amazon clone is a web development project replicating the functionality and design of the Amazon e-commerce platform for learning and practice purposes.</p>
+                    <a href="https://github.com/khyathiyadlapalli/Amazon-clone"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  <!--------------contact------------------->
+  <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>khyathiyadlapalli222423@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>8106519396</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/khyathi-yadlapalli-96349b241/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                   
+                </div>
+                <a href="images/My CV.pdf " download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name"  required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="copyright">
+      <p>Copyright @ Khyathi<i class="fa-solid fa-heart"></i>. </p>  
+    </div>
+  </div>      
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwL1WYTbWSfOPRPGsBpwe-FzWPnORJvdxT-yy85OE0_cV0qETUv5q8jierjCOJ8lbDFhg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+              msg.innerHTML=""  
+            },5000)
+            form.reset() 
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  
+  
+
+
+    </body>
+</html>
